@@ -11,7 +11,7 @@ function App() {
     t1.staggerFrom(
       '.text',
       1,
-      { y: 56, ease: Power2.easeIn, delay: 0.1, opacity: 0 },
+      { y: 56, ease: Power2.easeIn, delay: 0.8, opacity: 0 },
       0.15,
       'Start'
     )
@@ -31,7 +31,7 @@ function App() {
           <div className="bannerMain-lft__inner">
           <h2>
             <span className="text">Go paperless </span><br />
-            <span className="text">with our App </span>
+            <span className="text">with our App</span>
           </h2>
           <p className="textAnimation">
             We provide seemeless integration with <br /> multiple devices so
