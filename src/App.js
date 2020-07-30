@@ -4,7 +4,7 @@ import doodle from './assets/doodle.svg';
 import { TimelineLite, Power3 } from 'gsap';
 
 function App() {
-  let t1 = new TimelineLite({ delay: 0.8 });
+  let t1 = new TimelineLite({ delay: 0.3 });
 
   useEffect(() => {
     t1.from(
@@ -20,7 +20,12 @@ function App() {
       0.15,
       'Start'
     )
-      .from('.btn-primary', 1, { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.5 }, 0.35)
+      .from(
+        '.btn-primary',
+        1,
+        { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.4 },
+        0.35
+      )
       .from(
         '.paragraphAnimation',
         1,
