@@ -1,27 +1,39 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import doodle from './assets/doodle.svg';
-import { TimelineLite, Power2 } from 'gsap';
+import { TimelineLite, Power3 } from 'gsap';
 
 function App() {
   let t1 = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
-    t1.from('.bannerMain-rgt', 3, { y: 1280, ease: Power2.easeOut }, 'Start');
+    t1.from(
+      '.bannerMain-rgt',
+      3,
+      { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+      'Start'
+    );
     t1.staggerFrom(
       '.text',
       1,
-      { y: 56, ease: Power2.easeIn, delay: 0.8, opacity: 0 },
+      { y: 30, ease: Power3.easeOut, opacity: 0 },
       0.15,
       'Start'
     )
-      t1.from(
-        '.bannerMain-lft__inner',
+      .from('.btn-primary', 1, { y: 20, opacity: 0, ease: Power3.easeOut, delay: 0.5 }, 0.35)
+      .from(
+        '.paragraphAnimation',
         1,
-        { y: 20, opacity: 0, ease: Power2.easeIn },
-        1.4
+        { y: 10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+        0.35
       )
-      t1.from('.btn-primary', 1, { y: 20, opacity: 0, ease: Power2.easeIn }, 1.4);
+      .from(
+        'nav',
+        1,
+        { y: -10, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
+        0.35,
+        'Start'
+      );
   });
 
   return (
@@ -51,11 +63,14 @@ function App() {
           <div className="bannerMain-lft">
             <div className="bannerMain-lft__inner">
               <h2>
-                <span className="text">Go paperless </span>
-                <br />
-                <span className="text">with our App</span>
+                <div className="textWrapper">
+                  <span className="text">Go paperless </span>
+                </div>
+                <div className="textWrapper">
+                  <span className="text">with our App</span>
+                </div>
               </h2>
-              <p className="textAnimation">
+              <p className="paragraphAnimation">
                 We provide seemeless integration with <br /> multiple devices so
                 that you can take <br /> notes even better.
               </p>

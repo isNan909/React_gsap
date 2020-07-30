@@ -71,3 +71,8 @@ nav .nav-logo{
   color: var(--blue-main);
   font-size: 19px;;
 }
+.textWrapper {
+  background-color: transparent;
+  overflow: hidden;
+  height: 50px;
+}
