@@ -126,9 +126,9 @@ function App() {
       <div className="container content">
         <main className="content-main">
           {panels.map(({ title, subtitle }) => (
-            <div className="content-list" key={panels.index}>
-              <h2 className="scrollAnimate">{title}</h2>
-              <p className="scrollAnimate">{subtitle}</p>
+            <div key={panels.index}>
+              <h2>{title}</h2>
+              <p>{subtitle}</p>
             </div>
           ))}
         </main>
