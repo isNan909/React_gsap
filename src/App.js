@@ -26,8 +26,6 @@ const panels = [
 
 function App() {
   let t1 = new TimelineLite({ delay: 0.3 });
-  let t2 = gsap.timeline();
-
   useEffect(() => {
     t1.from(
       '.bannerMain-rgt',
@@ -61,9 +59,10 @@ function App() {
         0.35,
         'Start'
       );
-    t2.from('.content', {
-      duration: 10,
+    gsap.from('.content', {
+      duration: 3,
       y: '100',
+      opacity: 0,
       ease: 'ease-in',
       scrollTrigger: {
         trigger: '.content-main',
