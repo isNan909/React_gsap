@@ -9,7 +9,7 @@ a{
   color: #5a5a5a;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1440px; 
   margin: auto;
 }
 body {
@@ -75,4 +75,11 @@ nav .nav-logo{
   background-color: transparent;
   overflow: hidden;
   height: 50px;
+}
+.content{
+  background-color: #ffffff;
+  width: 100vw;
+}
+.App-section{
+  margin-top: 80px;
 }
