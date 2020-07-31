@@ -78,7 +78,10 @@ nav .nav-logo{
 }
 .content{
   background-color: #ffffff;
-  width: 100vw;
+  padding: 30px 0px;
+}
+.content-main > div{
+  margin-bottom: 90px;
 }
 .App-section{
   margin-top: 80px;

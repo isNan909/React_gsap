@@ -123,15 +123,17 @@ function App() {
           </section>
         </div>
       </div>
-      <div className="container content">
-        <main className="content-main">
-          {panels.map(({ title, subtitle }) => (
-            <div key={panels.index}>
-              <h2>{title}</h2>
-              <p>{subtitle}</p>
-            </div>
-          ))}
-        </main>
+      <div className="content">
+        <div className="container ">
+          <main className="content-main">
+            {panels.map(({ title, subtitle }) => (
+              <div key={panels.index}>
+                <h2>{title}</h2>
+                <p>{subtitle}</p>
+              </div>
+            ))}
+          </main>
+        </div>
       </div>
     </div>
   );
